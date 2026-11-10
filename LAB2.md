@@ -5,6 +5,8 @@ Poczta: v.cerniavski@uwb.edu.pl
 Pracujesz indywidualnie, w swoim repozytorium. Przygotuj prostą stronę „Raport koszyków” i otwórz ją w przeglądarce pod dwoma adresami. Pod adresem S3 zobaczysz gotowy plik. Pod adresem funkcji Lambda zobaczysz stronę z nagłówkiem dopasowanym do parametru w adresie. Obie usługi uruchomisz na swoim komputerze w LocalStack.
 Pliki dockera, polecenia wykonane w konsoli lstk proszę zapisać jako udowodnienia w oddzielnym pliku tekstowym oraz umieścić na swój github.
 
+-- AWS Wydziela bezpłatne 100$ dla nowego konta, do maja rekomenduje założyć konto oraz wykonać te zadania tam.
+
 ## 1. Przygotuj środowisko
 
 Uruchom LocalStack przez Docker Compose. Zapisz konfigurację w `compose.yaml`. Udostępnij port tylko lokalnie i sprawdź w dokumentacji, czego LocalStack potrzebuje, aby uruchamiać funkcje Lambda w Dockerze. Jeśli obraz wymaga tokenu, zapisz go w lokalnym pliku `.env` i dodaj ten plik do `.gitignore`. Polecenia AWS CLI kieruj do lokalnego emulatora. [Instalacja LocalStack](https://docs.localstack.cloud/aws/getting-started/installation/), [Lambda w LocalStack](https://docs.localstack.cloud/aws/services/lambda/)
