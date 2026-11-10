@@ -1,3 +1,5 @@
+Poczta: v.cerniavski@uwb.edu.pl
+
 # Lab 2 · Jedna strona, dwa sposoby udostępnienia
 
 Pracujesz indywidualnie, w swoim repozytorium. Przygotuj prostą stronę „Raport koszyków” i otwórz ją w przeglądarce pod dwoma adresami. Pod adresem S3 zobaczysz gotowy plik. Pod adresem funkcji Lambda zobaczysz stronę z nagłówkiem dopasowanym do parametru w adresie. Obie usługi uruchomisz na swoim komputerze w LocalStack.
