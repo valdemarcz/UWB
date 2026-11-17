@@ -1,6 +1,6 @@
-# Laboratorium 4 — reguły biznesowe i analiza wyników
+# Laboratorium 6 — reguły biznesowe i analiza wyników
 
-[Poprzednie laboratorium](lab-03-sqs-lambda.md) · [Instrukcja główna](README.md) · [Następne laboratorium](lab-05-docker-cicd.md)
+[Poprzednie laboratorium](lab-05-sqs-lambda.md) · [Instrukcja główna](README.md) · [Następne laboratorium](lab-07-docker-cicd.md)
 
 ## Cel
 
