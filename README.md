@@ -77,12 +77,12 @@ Przy powtórnym `POST` z tym samym ID i tymi samymi danymi istniejący szkic na 
 
 | Karta | Wynik spotkania |
 | --- | --- |
-| [1. IAM i prywatne S3](lab-01-iam-s3.md) | Próbka danych na S3, odczyt dozwolony i odczyt odmówiony. |
-| [2. HTTP API i DynamoDB](lab-02-api-dynamodb.md) | Utworzenie szkicu i odczyt stanu przez działający adres w AWS. |
-| [3. SQS i Lambda przetwarzająca](lab-03-sqs-lambda.md) | Przejście od oczekiwania do wyniku i sprawdzenie powtórnego dostarczenia. |
-| [4. Reguły i analiza danych](lab-04-reguly-analiza.md) | Trzy sprawdzone scenariusze i analiza wyników dla próbki z S3. |
-| [5. Docker i GitHub Actions](lab-05-docker-cicd.md) | Wersja wdrożona automatycznie na AWS i obraz w ECR. |
-| [6. Kubernetes i odbiór projektu](lab-06-kubernetes-odbior.md) | Aktualizacja i rollback kontenera oraz pokaz kompletnego projektu w AWS. |
+| [1. IAM i prywatne S3](lab-03-iam-s3.md) | Próbka danych na S3, odczyt dozwolony i odczyt odmówiony. |
+| [2. HTTP API i DynamoDB](lab-04-api-dynamodb.md) | Utworzenie szkicu i odczyt stanu przez działający adres w AWS. |
+| [3. SQS i Lambda przetwarzająca](lab-05-sqs-lambda.md) | Przejście od oczekiwania do wyniku i sprawdzenie powtórnego dostarczenia. |
+| [4. Reguły i analiza danych](lab-06-reguly-analiza.md) | Trzy sprawdzone scenariusze i analiza wyników dla próbki z S3. |
+| [5. Docker i GitHub Actions](lab-07-docker-cicd.md) | Wersja wdrożona automatycznie na AWS i obraz w ECR. |
+| [6. Kubernetes i odbiór projektu](lab-08-kubernetes-odbior.md) | Aktualizacja i rollback kontenera oraz pokaz kompletnego projektu w AWS. |
 
 ## Praca na koncie kursowym
 
