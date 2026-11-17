@@ -18,7 +18,7 @@ Wybierz jeden wariant do końca pierwszego spotkania. Używaj wyłącznie danych
 3. **Prywatne S3** przechowuje próbkę wejściową do analizy. **CloudWatch Logs** pozwala prześledzić zlecenie po identyfikatorze. **IAM** określa, co może zrobić każda rola.
 4. **GitHub Actions** testuje kod, aktualizuje Lambdę API i publikuje obraz w **ECR**. Obraz uruchamia tę samą logikę biznesową z prostym interfejsem HTTP w lokalnym Kubernetesie.
 
-Każde laboratorium rozbudowuje ten sam projekt. Możesz wcześniej testować kod lokalnie, także w LocalStacku. Odbiór etapów dotyczących AWS odbywa się na koncie wskazanym przez prowadzącego.
+Każde laboratorium rozbudowuje ten sam projekt. Możesz wcześniej testować kod lokalnie, także w LocalStacku. 
 
 ## Wspólny kontrakt API
 
@@ -86,11 +86,11 @@ Przy powtórnym `POST` z tym samym ID i tymi samymi danymi istniejący szkic na 
 
 ## Praca na koncie kursowym
 
-- Przed pierwszym wdrożeniem ustal z prowadzącym konto, region, swój prefiks nazw i dopuszczone operacje. Regionalne zasoby aplikacji trzymaj w ustalonym regionie. Zakres usług i operacji zależy od planu konta oraz przyznanych uprawnień. [Plany kont AWS](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-plans.html)
-- Pracuj na przydzielonej tożsamości AWS. Rozróżniaj rolę osoby wdrażającej, role wykonawcze obu funkcji i rolę wdrożeniową GitHub Actions. W razie blokady podaj prowadzącemu usługę, operację, region i treść błędu po usunięciu danych dostępowych. Prowadzący może przypisać gotową rolę lub przygotować zasób.
-- Utrzymuj prywatne S3 z włączonym **Block Public Access**. Sposób wywoływania API ustal z prowadzącym przed jego udostępnieniem. Jeżeli trasy korzystają z autoryzacji IAM, klient musi podpisywać żądania SigV4 i mieć uprawnienie do wywołania trasy. [Autoryzacja IAM w HTTP API](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-access-control-iam.html)
+- Przed pierwszym wdrożeniem ustal , region, swój prefiks nazw i dopuszczone operacje. Regionalne zasoby aplikacji trzymaj w ustalonym regionie. Zakres usług i operacji zależy od planu konta oraz przyznanych uprawnień. [Plany kont AWS](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-plans.html)
+- Pracuj na przydzielonej tożsamości AWS. Rozróżniaj rolę osoby wdrażającej, role wykonawcze obu funkcji i rolę wdrożeniową GitHub Actions.
+- Utrzymuj prywatne S3 z włączonym **Block Public Access**. Jeżeli trasy korzystają z autoryzacji IAM, klient musi podpisywać żądania SigV4 i mieć uprawnienie do wywołania trasy. [Autoryzacja IAM w HTTP API](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-access-control-iam.html)
 - Zapisuj w Git kod, testy, workflow i manifesty. Dane dostępowe przechowuj poza repozytorium. Anonimizuj dowody widoczne publicznie. W logach aplikacji wystarczą identyfikator zlecenia, etap i wynik operacji.
-- Używaj małych porcji danych i utrzymuj listę własnych zasobów. Zmiany planu konta i uruchomienie płatnej infrastruktury uzgodnij z prowadzącym. Zachowaj zasoby potrzebne na następny etap, a po odbiorze zastosuj instrukcję sprzątania z ostatniej karty.
+- Używaj małych porcji danych i utrzymuj listę własnych zasobów. Zachowaj zasoby potrzebne na następny etap, a po odbiorze zastosuj instrukcję sprzątania z ostatniej karty.
 
 ## Oddawanie pracy
 
