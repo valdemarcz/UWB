@@ -1,6 +1,6 @@
-# Laboratorium 6 — Kubernetes, rollback i odbiór projektu
+# Laboratorium 8 — Kubernetes, rollback i odbiór projektu
 
-[Poprzednie laboratorium](lab-05-docker-cicd.md) · [Instrukcja główna](README.md)
+[Poprzednie laboratorium](lab-07-docker-cicd.md) · [Instrukcja główna](README.md)
 
 ## Cel
 
@@ -19,8 +19,6 @@ Uruchom kontener z logiką projektu w lokalnym Kubernetesie, zmień wersję obra
 
 Oczekiwana obserwacja to sekwencja **wersja 1 → wersja 2 → wersja 1**. Dla tej samej próbki decyzja biznesowa powinna pozostać poprawna. Zachowaj manifesty w repozytorium.
 
-Jeśli prowadzący udostępni wspólny klaster EKS, porównaj z pokazem uruchomienia tych samych manifestów na AWS. Sprawdź, które elementy konfiguracji zależą od środowiska, np. dostęp do rejestru i sposób udostępnienia portu. Zasoby EKS przygotowuje prowadzący po sprawdzeniu konta i kosztu. [Cennik Amazon EKS](https://aws.amazon.com/eks/pricing/)
-
 ## Część B — demonstracja na AWS
 
 1. Wyślij poprawne zlecenie z nowym UUID do wdrożonego `POST /requests`. Pokaż odpowiedź `202` i odczytaj końcowy wynik z `GET` pod zwróconym adresem. Przetwarzanie może się skończyć przed pierwszym odczytem. Próbę `PENDING` pokaż wtedy na dowodzie z lab. 3.
@@ -36,13 +34,13 @@ Oddaj link do końcowego commita i dwa krótkie dowody. Pierwszy pokazuje odpowi
 
 ## Rozszerzenie dla chętnych
 
-Po uruchomieniu całego projektu w AWS możesz wybrać jedno ćwiczenie dodatkowe. Uzgodnij dostęp do zasobów z prowadzącym.
+Po uruchomieniu całego projektu w AWS możesz wybrać jedno ćwiczenie dodatkowe.
 
 - **Odzyskiwanie zlecenia.** Dodaj kolejkę błędów (*dead-letter queue*, DLQ). Wywołaj kontrolowany trwały błąd i pokaż, że wiadomość trafia do DLQ po ustalonej liczbie prób. Usuń przyczynę awarii, ponów przetwarzanie i sprawdź wynik dla tego samego ID. [Obsługa błędów w Lambda–SQS](https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-configure.html)
 - **Analiza w AWS.** Zapisz syntetyczne wyniki z lab. 4 w prywatnym S3. Oblicz odsetki odrzuceń po grupach w Athena i porównaj je z obliczeniami ręcznymi. Pokaż zapytanie i tabelę wyników. [Pierwsze zapytanie w Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/getting-started.html)
 
 ## Po odbiorze
 
-1. Zachowaj commit i dowody potrzebne do oceny. Uzgodnij z prowadzącym moment sprzątania, jeśli będzie jeszcze wywoływać Twoje API.
+1. Zachowaj commit i dowody potrzebne do oceny. 
 2. Usuń zasoby utworzone na potrzeby ćwiczenia w lokalnym Kubernetesie. Na AWS zakończ przyjmowanie zleceń i wyłącz powiązanie kolejki z funkcją przed usunięciem zasobów aplikacji.
 3. Przejrzyj własną listę zasobów, w tym API, obie funkcje, kolejkę, tabelę, logi, obiekty S3, obrazy ECR i role utworzone specjalnie dla projektu. Usuń przypisane Ci zasoby zgodnie z zasadami konta. Przy współdzielonym buckecie lub rejestrze ogranicz się do przydzielonych obiektów lub obrazów. Zasoby współdzielone usuwa ich właściciel.
