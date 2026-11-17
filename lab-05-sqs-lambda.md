@@ -1,6 +1,6 @@
-# Laboratorium 3 — SQS i Lambda przetwarzająca
+# Laboratorium 5 — SQS i Lambda przetwarzająca
 
-[Poprzednie laboratorium](lab-02-api-dynamodb.md) · [Instrukcja główna](README.md) · [Następne laboratorium](lab-04-reguly-analiza.md)
+[Poprzednie laboratorium](lab-04-api-dynamodb.md) · [Instrukcja główna](README.md) · [Następne laboratorium](lab-06-reguly-analiza.md)
 
 ## Cel
 
