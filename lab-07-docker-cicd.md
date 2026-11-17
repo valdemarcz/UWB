@@ -1,6 +1,6 @@
-# Laboratorium 5 — Docker i wdrożenie z GitHub Actions
+# Laboratorium 7 — Docker i wdrożenie z GitHub Actions
 
-[Poprzednie laboratorium](lab-04-reguly-analiza.md) · [Instrukcja główna](README.md) · [Następne laboratorium](lab-06-kubernetes-odbior.md)
+[Poprzednie laboratorium](lab-06-reguly-analiza.md) · [Instrukcja główna](README.md) · [Następne laboratorium](lab-08-kubernetes-odbior.md)
 
 ## Cel
 
