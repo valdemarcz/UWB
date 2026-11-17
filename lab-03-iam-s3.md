@@ -1,4 +1,4 @@
-# Laboratorium 1 — IAM i prywatne dane w S3
+# Laboratorium 3 — IAM i prywatne dane w S3
 
 [Instrukcja główna](README.md) · [Następne laboratorium](lab-02-api-dynamodb.md)
 
