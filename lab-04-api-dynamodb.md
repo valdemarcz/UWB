@@ -1,6 +1,6 @@
-# Laboratorium 2 — HTTP API i stan w DynamoDB
+# Laboratorium 3 — HTTP API i stan w DynamoDB
 
-[Poprzednie laboratorium](lab-01-iam-s3.md) · [Instrukcja główna](README.md) · [Następne laboratorium](lab-03-sqs-lambda.md)
+[Poprzednie laboratorium](lab-03-iam-s3.md) · [Instrukcja główna](README.md) · [Następne laboratorium](lab-04-sqs-lambda.md)
 
 ## Cel
 
