@@ -16,8 +16,8 @@ Rola użyta do przygotowania danych może mieć więcej uprawnień niż rola uż
 
 1. Wybierz temat. W swoim repozytorium zanotuj wariant, region i sposób oznaczania własnych zasobów. Ustal z prowadzącym, czy używasz własnego bucketu, czy przydzielonego prefiksu w buckecie kursowym.
 2. Zapisz odpowiednią próbkę jako plik CSV z nagłówkiem. Umieść go w prywatnym S3 pod własnym prefiksem. Sprawdź ustawienie Block Public Access.
-3. Przygotuj z prowadzącym drugi, istniejący obiekt testowy w tym samym buckecie, pod osobnym prefiksem poza zakresem odczytu. Do tej próby użyj wydzielonego pliku kontrolnego.
-4. Ustaw lub odbierz rolę z odczytem ograniczonym do własnego prefiksu. Pobierz swój plik z użyciem tej roli, a następnie spróbuj pobrać wskazany obiekt kontrolny. Zachowaj oba wyniki.
+3. Przygotuj istniejący obiekt testowy w tym samym buckecie, pod osobnym prefiksem poza zakresem odczytu. Do tej próby użyj wydzielonego pliku kontrolnego.
+4. Ustaw lub odbierz rolę z odczytem ograniczonym do własnego prefiksu. Pobierz swój plik z użyciem tej roli, a następnie spróbuj pobrać obiekt kontrolny. Zachowaj oba wyniki.
 
 ## Próbka wejściowa
 
